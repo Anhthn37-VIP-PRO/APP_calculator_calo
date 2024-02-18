@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.diet.simplecaloriecounter.simplecaloriecounter.ui.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.diet.simplecaloriecounter.simplecaloriecounter.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_goal"
+        android:name="com.diet.simplecaloriecounter.simplecaloriecounter.ui.goal.GoalFragment"
+        android:label="@string/goal"
+        tools:layout="@layout/fragment_goal" />
+
+    <fragment
+        android:id="@+id/nav_food"
+        android:name="com.diet.simplecaloriecounter.simplecaloriecounter.ui.food.FoodFragment"
+        android:label="@string/food"
+        tools:layout="@layout/fragment_food" />
+
+    <fragment
+        android:id="@+id/nav_statistics"
+        android:name="com.diet.simplecaloriecounter.simplecaloriecounter.ui.statistics.StatisticsFragment"
+        android:label="Statistics"
+        tools:layout="@layout/fragment_statistics"/>
+
+    <fragment
+        android:id="@+id/nav_gps"
+        android:name="com.diet.simplecaloriecounter.simplecaloriecounter.ui.statistics.StatisticsFragment"
+        android:label="GPS"
+        tools:layout="@layout/fragment_gps"/>
+
+    <fragment
+        android:id="@+id/nav_photo"
+        android:name="com.diet.simplecaloriecounter.simplecaloriecounter.ui.statistics.StatisticsFragment"
+        android:label="Photo"
+        tools:layout="@layout/fragment_photo"/>
+
+    <fragment
+        android:id="@+id/nav_video"
+        android:name="com.diet.simplecaloriecounter.simplecaloriecounter.ui.statistics.StatisticsFragment"
+        android:label="Video"
+        tools:layout="@layout/fragment_video"/>
+
+
+</navigation>

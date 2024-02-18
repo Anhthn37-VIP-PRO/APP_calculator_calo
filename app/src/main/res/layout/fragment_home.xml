@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="18dp"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/headcell">
+
+                    <TextView
+                        android:id="@+id/textViewHeadlineGoalWithActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="@string/total_calories"
+                        android:textColor="@android:color/holo_orange_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewHeadlineFood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="@string/consumed"
+                        android:textColor="@android:color/holo_green_light"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewHeadlineSum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="@string/remaining"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textViewBodyGoalWithActivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="@string/blank"
+                        android:textColor="@color/design_default_color_primary_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewBodyFood"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="@string/blank"
+                        android:textColor="@color/design_default_color_primary_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewBodyRemaining"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:text="@string/blank"
+                        android:textColor="@color/design_default_color_primary_dark"
+                        android:textSize="18sp" />
+                </TableRow>
+            </TableLayout>
+
+
+            <!-- Breakfast -->
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/tableRowHeadlineBreakfast"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageViewAddBreakfast"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_menu_add" />
+
+                    <TextView
+                        android:id="@+id/textViewHeadlineBreakfast"
+                        android:layout_width="251dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/breakfast"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewEnergyBreakfast"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/energy"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+
+                </TableRow>
+            </TableLayout>
+
+            <!-- Lunch -->
+            <TableLayout
+                android:id="@+id/tableLayoutBreakfastItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="25dp">
+
+                <TableRow
+                    android:id="@+id/tableRowBreakfastItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:id="@+id/tableRowHeadlineLunch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageViewAddLunch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_menu_add" />
+
+                    <TextView
+                        android:id="@+id/textViewHeadlineLunch"
+                        android:layout_width="251dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lunch"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewEnergyLunch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/energy"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayoutLunchItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="25dp">
+
+            </TableLayout>
+            <!-- //Lunch -->
+
+            <!-- Before training -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:id="@+id/tableRowHeadlineBeforeTraining"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageViewAddBeforeTraining"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_menu_add" />
+
+                    <TextView
+                        android:id="@+id/textViewHeadlineBeforeTraining"
+                        android:layout_width="251dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/before_training"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewEnergyBeforeTraining"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/energy"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayoutBeforeTrainingItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="25dp">
+
+            </TableLayout>
+            <!-- //BeforeT raining -->
+
+            <!-- After training -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:id="@+id/tableRowHeadlineAfterTraining"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageViewAddAfterTraining"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_menu_add" />
+
+                    <TextView
+                        android:id="@+id/textViewHeadlineAfterTraining"
+                        android:layout_width="251dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/after_training"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewEnergyAfterTraining"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/energy"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayoutAfterTrainingItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="25dp">
+
+            </TableLayout>
+            <!-- //After Training -->
+
+            <!-- Dinner -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:id="@+id/tableRowHeadlineDinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageViewAddDinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_menu_add" />
+
+                    <TextView
+                        android:id="@+id/textViewHeadlineDinner"
+                        android:layout_width="251dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dinner"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewEnergyDinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/energy"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayoutDinnerItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="25dp">
+
+            </TableLayout>
+            <!-- //Dinner -->
+
+            <!-- Snacks -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:id="@+id/tableRowHeadlineSnacks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageViewAddSnacks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_menu_add" />
+
+                    <TextView
+                        android:id="@+id/textViewHeadlineSnacks"
+                        android:layout_width="251dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/snacks"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewEnergySnacks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/energy"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayoutSnacksItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="25dp">
+
+            </TableLayout>
+            <!-- //Snacks -->
+
+            <!-- Supper -->
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:id="@+id/tableRowHeadlineSupper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageViewAddSupper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_menu_add" />
+
+                    <TextView
+                        android:id="@+id/textViewHeadlineSupper"
+                        android:layout_width="251dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/supper"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textViewEnergySupper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/energy"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayoutSupperItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:paddingTop="7dp"
+                android:text="@string/note"
+                android:textColor="@android:color/holo_purple"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:paddingTop="5dp"
+                android:text="@string/note1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="133dp"
+                android:paddingLeft="6dp"
+                android:paddingTop="3dp"
+                android:text="@string/note2"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</FrameLayout>
